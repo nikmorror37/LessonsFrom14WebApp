@@ -1,0 +1,39 @@
+﻿<h2>Регистрация</h2>
+@using (Html.BeginForm("Registration", "Home", FormMethod.Post))
+{
+@*		<p>
+			@Html.LabelFor(user => user.UserName, "UserName")<br />
+			@Html.TextBoxFor(user => user.UserName)
+		</p>
+		<p>
+			@Html.LabelFor(user=>user.Password, "Password")<br />
+			@Html.TextBoxFor(user => user.Password, "", new { type="password" })
+		</p>
+		<p>
+			@Html.LabelFor(user=>user.ConfirmPassword, "ConfirmPassword")<br />
+			@Html.TextBoxFor(user => user.ConfirmPassword, "", new { type="password" })
+		</p>
+		<p>
+			@Html.LabelFor(user => user.Adress, "Adress")<br />
+			@Html.TextBoxFor(user => user.Adress)
+		</p>*@
+		<p>
+		<label>Имя пользователя</label><br />
+		@Html.TextBox("userName")
+		</p>
+		<p>
+		<label>Пароль</label><br />
+		@Html.TextBox("password", "", new { type="password" })
+		</p>
+		<p>
+		<label>Повторите пароль</label><br />
+		@Html.TextBox("confirmPassword", "", new { type="password" })
+		</p>
+		<p>
+		<label>Адрес</label><br />
+		@Html.TextBox("adress")
+		</p>
+		<p>
+			<input type="submit" value="Отправить" />
+		</p>
+}

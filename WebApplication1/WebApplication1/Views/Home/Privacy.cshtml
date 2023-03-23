@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Примеры с занятия";
+}
+<h1>@ViewData["Title"]</h1>
+@model string[]
+
+<div>@ViewData["Ignat"]</div>
+<div>@ViewData["Numbers"]</div>
+<div>@ViewData["UFO"]</div>
+
+<div>@ViewBag.BasketballSquad.Length</div>
+@foreach (string basketballPlayer in ViewBag.BasketballSquad)
+{
+    <div>@basketballPlayer</div>
+}
+
+
+@foreach (var club in Model)
+{
+    <img src="@club"/>
+}
+<p>Road Hello all</p>
+
